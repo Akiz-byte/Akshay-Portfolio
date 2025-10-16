@@ -29,25 +29,21 @@ const ContactSection = () => {
       icon: Mail,
       label: 'Email',
       value: 'sawantakshay2309@gmail.com',
-      // href: 'aniketgavate12345@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
       value: '+919307715466',
-      // href: 'tel:+15551234567',
     },
     {
       icon: MapPin,
       label: 'Location',
       value: 'Mumbai, Maharashtra, India',
-      // href: 'https://maps.google.com',
     },
   ];
 
   return (
     <section ref={sectionRef} className="py-20 px-6 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-10 animate-float"
              style={{
@@ -74,7 +70,6 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Information */}
           <div className={`space-y-8 transition-all duration-1000 delay-300 ${
             sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
@@ -90,7 +85,6 @@ const ContactSection = () => {
               {contactInfo.map((info, index) => (
                 <a
                   key={info.label}
-                  // href={info.href}
                   className="group flex items-center gap-4 p-4 rounded-xl card-premium transition-all duration-300 hover:scale-105"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
@@ -107,7 +101,6 @@ const ContactSection = () => {
               ))}
             </div>
           </div>
-          {/* Empty column as placeholder */}
           <div className={`transition-all duration-1000 delay-500 ${
             sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
           }`}

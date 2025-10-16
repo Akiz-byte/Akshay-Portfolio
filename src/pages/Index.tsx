@@ -21,7 +21,6 @@ const Index = () => {
         <ContactSection />
       </div>
       
-      {/* Footer */}
       <footer className="py-8 px-6 border-t border-border/50">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground">

@@ -21,7 +21,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
           className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 animate-float"
@@ -42,7 +41,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 text-center px-6">
         <div className={`transition-all duration-1000   ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h1
@@ -52,14 +50,12 @@ const HeroSection = () => {
             AHaya saava/ta
           </h1>
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          {/* <p className="text-xl md:text-2xl font-medium text-foreground mb-6"></p> */}
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-7">
               Front End Developer passionate about creating innovative web solutions.
             </p>
           </div>
         </div>
 
-        {/* Social Icons */}
         <div className={`flex justify-center gap-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <a
             href="https://github.com/Akiz-byte"
@@ -80,13 +76,6 @@ const HeroSection = () => {
             <div className="absolute inset-0 rounded-full bg-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </a>
         </div>
-
-        {/* Scroll Indicator */}
-        {/* <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
-          </div>
-        </div> */}
       </div>
     </section>
   );

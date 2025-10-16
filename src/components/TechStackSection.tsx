@@ -4,18 +4,14 @@ import {
   siTypescript,
   siNextdotjs,
   siNodedotjs,
-  // siPython,
   siMysql,
   siFirebase,
   siDocker,
-  // siGraphql,
   siTailwindcss,
   siFigma,
   siGsap,
   siClerk,
 } from 'simple-icons';
-
-// import siAmazonaws from 'simple-icons/icons/amazonaws.js';
 
 const technologies = [,
   { name: 'React', icon: siReact },
@@ -103,7 +99,6 @@ const TechStackSection = () => {
 
   return (
     <section ref={sectionRef} className="py-20 px-6 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 left-0 w-96 h-96 rounded-full opacity-5 animate-float"
              style={{
@@ -136,11 +131,6 @@ const TechStackSection = () => {
             <TechIcon key={tech.name} tech={tech} index={index} />
           ))}
         </div>
-
-        {/* Decorative Elements */}
-        {/* <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-ping" />
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-accent rounded-full animate-pulse" />
-        <div className="absolute top-1/2 left-10 w-1 h-1 bg-primary rounded-full animate-bounce" /> */}
       </div>
     </section>
   );

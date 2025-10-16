@@ -7,7 +7,7 @@ const projects = [
     title: "Toms-cinema",
     description: "A movie watchlist and streaming platform powered by the TMDB API. Browse, search, and stream movies, add favorites to your watchlist with a modern UI.",
     technologies: ["ReactJS","Typescript","TailwindCSS", "Firebase", "TMDB API"],
-    liveUrl: "https://tom-movie.netlify.app",
+    liveUrl: "https://toms-cinema.netlify.app/",
     githubUrl: "https://github.com/Akiz-byte/Toms-cinema",
     image: "./Tom-cinema.JPG",
   },
