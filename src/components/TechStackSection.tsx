@@ -11,6 +11,8 @@ import {
   siFigma,
   siGsap,
   siClerk,
+  siGit,
+  siGithub,
 } from 'simple-icons';
 
 const technologies = [,
@@ -21,7 +23,8 @@ const technologies = [,
   { name: 'Tailwind CSS', icon: siTailwindcss },
   { name: 'Figma', icon: siFigma },
   { name: 'Firebase', icon: siFirebase },
-
+  { name: 'Git', icon: siGit },
+  { name: 'GitHub', icon: siGithub },
 
 ];
 
@@ -124,7 +127,7 @@ const TechStackSection = () => {
           </p>
         </div>
 
-        <div className={`grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 transition-all duration-1000 delay-300 ${
+        <div className={`grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-1000 delay-300 ${
           sectionVisible ? 'opacity-100' : 'opacity-0'
         }`}>
           {technologies.map((tech, index) => (

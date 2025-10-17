@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,18 +55,35 @@ const Navigation = () => {
                 <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
+            <a
+              href="/Resume_Akshay_Sawant.pdf"
+              download
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 group font-medium text-sm"
+            >
+              <Download className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-y-0.5" />
+              CV
+            </a>
           </div>
 
-          <button
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors duration-300"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-3">
+            <a
+              href="/Resume_Akshay_Sawant.pdf"
+              download
+              className="p-2 text-primary hover:text-background hover:bg-primary rounded-full border border-primary/30 transition-all duration-300"
+            >
+              <Download className="w-5 h-5" />
+            </a>
+            <button
+              className="p-2 text-foreground hover:text-primary transition-colors duration-300"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}>
           <div className="py-4 space-y-4">
             {navItems.map((item) => (
@@ -78,7 +95,7 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-          </div>
+            </div>
         </div>
       </div>
     </nav>
